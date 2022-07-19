@@ -19,7 +19,7 @@ mv NeoVim_Essentials/nvim/* ~/.config/nvim && rm -rf NeoVim_Essentials
 ```
 
 ## Directory Layout
-![Screen Shot 2022-07-18 at 11 09 45 PM](https://user-images.githubusercontent.com/109567305/179658188-f20d1336-332a-4258-b195-e33626d428df.png)
+![Screen Shot 2022-07-19 at 12 06 10 AM](https://user-images.githubusercontent.com/109567305/179662460-3a14d7a1-3635-44b5-a5bd-99d87a8a62bb.png)
 
 ## Installed are the following plugins using packer:
 ```
