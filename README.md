@@ -1,6 +1,6 @@
 # NeoVim Essentials
 
-Hello everyone! This repository is inspiration from chris@machine, kickstart.nvim, and NvChad. 
+Hello everyone! This repository is inspired by chris@machine, kickstart.nvim, and NvChad. 
 All of them have great setups but I wanted something that was the absolute bare minimum, 
 that was well organized. So this is what I came up with! Enjoy. 
 
