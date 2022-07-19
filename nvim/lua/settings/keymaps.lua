@@ -16,7 +16,6 @@ vim.g.maplocalleader = " "
 --   Terminal     = "t"
 --   Command      = "c"
 
-keymap("n", "<leader>e", ":Lex 20<CR>", opts)
 keymap("n", "<leader>v", ":Vex<CR>", opts)
 keymap("n", "<leader>ff", "<CMD>Telescope find_files<CR>", opts)
 keymap("n", "<leader>rg", "<CMD>Telescope live_grep<CR>", opts)
