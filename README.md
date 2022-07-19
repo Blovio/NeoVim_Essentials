@@ -4,6 +4,21 @@ Hello everyone! This repository is inspiration from chris@machine, kickstart.nvi
 All of them have great setups but I wanted something that was the absolute bare minimum, 
 that was well organized. So this is what I came up with! Enjoy. 
 
+## Installation
+Remove previous nvim installation if it exists.
+```
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.cache/nvim
+```
+Then add this repo.
+```
+git clone https://github.com/Blovio/NeoVim_Essentials
+mkdir -p ~/.config/nvim
+mv NeoVim_Essentials/nvim/* ~/.config/nvim && rm -rf NeoVim_Essentials
+```
+
+## Directory Layout
 ![Screen Shot 2022-07-18 at 11 09 45 PM](https://user-images.githubusercontent.com/109567305/179658188-f20d1336-332a-4258-b195-e33626d428df.png)
 
 ## Installed are the following plugins using packer:
