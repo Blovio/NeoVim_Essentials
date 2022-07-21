@@ -1,7 +1,7 @@
 local present, lspconfig = pcall(require, "lspconfig")
 
 if not present then
-   return
+  return
 end
 
 local opts = { noremap=true, silent=true }
@@ -15,15 +15,15 @@ local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
   local vim_version = vim.version()
 
-   if vim_version.minor > 7 then
-      -- nightly
-      client.server_capabilities.documentFormattingProvider = false
-      client.server_capabilities.documentRangeFormattingProvider = false
-   else
-      -- stable
-      client.resolved_capabilities.document_formatting = false
-      client.resolved_capabilities.document_range_formatting = false
-   end
+  if vim_version.minor > 7 then
+    -- nightly
+    client.server_capabilities.documentFormattingProvider = false
+    client.server_capabilities.documentRangeFormattingProvider = false
+  else
+    -- stable
+    client.resolved_capabilities.document_formatting = false
+    client.resolved_capabilities.document_range_formatting = false
+  end
 
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
@@ -48,14 +48,14 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 lspconfig.sumneko_lua.setup {
-   on_attach = on_attach,
-   capabilities = capabilities,
+  on_attach = on_attach,
+  capabilities = capabilities,
 
-   settings = {
-      Lua = {
-         diagnostics = {
-            globals = { "vim" },
-         },
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = { "vim" },
       },
-   },
+    },
+  },
 }

@@ -1,7 +1,7 @@
 local present, cmp = pcall(require, "cmp")
 
 if not present then
-   return
+  return
 end
 
 cmp.setup({
