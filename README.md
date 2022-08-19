@@ -19,22 +19,24 @@ mv NeoVim_Essentials/nvim/* ~/.config/nvim && rm -rf NeoVim_Essentials
 ```
 
 ## Directory Layout
-![Screen Shot 2022-07-19 at 12 06 10 AM](https://user-images.githubusercontent.com/109567305/179662460-3a14d7a1-3635-44b5-a5bd-99d87a8a62bb.png)
+![Screenshot from 2022-08-19 12-07-46](https://user-images.githubusercontent.com/89369559/185661142-2886ba2e-f7d7-4021-b12f-179094d49dfc.png)
 
 ## Installed are the following plugins using packer:
 ```
-   use 'wbthomason/packer.nvim'           -- packer manages itself 
-   use 'nvim-lua/plenary.nvim'            -- avoids callbacks, used by other plugins
-   use 'nvim-lua/popup.nvim'              -- popup for other plugins
-   use 'nvim-treesitter/nvim-treesitter'  -- language parsing completion engine
-   use 'williamboman/nvim-lsp-installer'  -- UI for fetching/downloading LSPs
-   use 'neovim/nvim-lspconfig'            -- language server protocol implementation
-   use 'hrsh7th/nvim-cmp'                 -- THE vim completion engine
-   use 'L3MON4D3/LuaSnip'                 -- more snippets
-   use 'saadparwaiz1/cmp_luasnip'         -- even more snippets
-   use 'hrsh7th/cmp-nvim-lsp'
-   use 'hrsh7th/cmp-buffer'
-   use 'hrsh7th/cmp-path'
-   use 'nvim-telescope/telescope.nvim'    -- finder, requires fzf and ripgrep
-   use 'gruvbox-community/gruvbox'        -- schmexy colors
+  use 'wbthomason/packer.nvim'             -- Packer manages itself 
+  use 'nvim-lua/plenary.nvim'              -- Avoids callbacks, used by other plugins
+  use 'nvim-lua/popup.nvim'                -- Popup for other plugins
+  use 'nvim-treesitter/nvim-treesitter'    -- Language parsing completion engine
+  use "williamboman/mason.nvim"            -- UI for fetching/downloading LSPs
+  use "williamboman/mason-lspconfig.nvim"  -- Bridges mason and lspconfig
+  use 'neovim/nvim-lspconfig'              -- Language server protocol implementation
+  use 'hrsh7th/nvim-cmp'                   -- Vim completion engine
+  use 'L3MON4D3/LuaSnip'                   -- More snippets
+  use 'saadparwaiz1/cmp_luasnip'           -- Even more snippets
+  use 'hrsh7th/cmp-nvim-lsp'               -- Cmp's own LSP
+  use 'hrsh7th/cmp-buffer'                 -- Cmp source for buffer words
+  use 'hrsh7th/cmp-path'                   -- Cmp source for path words
+  use 'nvim-telescope/telescope.nvim'      -- Finder, requires fzf and ripgrep
+  use 'gruvbox-community/gruvbox'          -- Schmexy colors
+
 ```
